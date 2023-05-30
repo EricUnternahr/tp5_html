@@ -1,0 +1,37 @@
+.dice{
+    border: 2px red solid;
+    border-radius: 25px;
+    background-color: lightgray;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border: 1px red solid;
+    background-color: red;
+    border-radius: 10px;
+}
+
+#d4>div, #d6>div, #d5 div:not(.dot)
+{
+    height:100%;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+#d5{
+    justify-content: space-evenly;
+}
+
+#d5 .dot{
+    align-self: center;
+}
